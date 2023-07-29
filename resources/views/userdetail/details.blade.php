@@ -46,6 +46,8 @@
         <button class="btn btn-primary"><a href="{{ route('userdetail.edit', $userDetails->id) }}"
                 class="btn btn-primary"> Edit </a></button>
     </div>
+    <button class="btn btn-primary"><a href="{{ route('form.create') }}" class="btn btn-primary"> create </a></button>
+    </div>
 
     <!-- Bootstrap JS and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

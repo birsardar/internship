@@ -9,6 +9,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserHasDetialController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\FormController;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 
 
@@ -50,4 +51,5 @@ Route::middleware('auth', 'manager')->prefix('manager')->group(function () {
 
 Route::middleware(['auth'])->prefix('user')->group(function () {
     Route::resource('userdetail', UserHasDetialController::class);
+    Route::resource('/form', FormController::class);
 });
